@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color"content="#6495ED">
+    <meta name="description" content="Calcul des proportions d'une recette.">
+    <link rel="manifest" href="manifest.webmanifest">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" crossorigin = "anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Actor&family=Alata&family=Roboto+Condensed&display=swap" crossorigin = "anonymous">
+    
+    <title>Convives</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="img/logo combien2.png" alt="logo">
+
+    </div>
+    <div class= "line"></div>
+
+    <div class="titre">
+        <h2>Calcul des proportions</h2>
+</div>
+<div class= "line"></div>
+    <div class="container">
+        <p class="info">Nombre de convives :</p>
+        <form id="form1" class="form1">
+            <input type="text" autocomplete="off" placeholder="Nombre initial" id= "convives">
+            <button id="ok1" type="button" onclick ="getInitConValue();">OK</button>
+            <input type="text" autocomplete="off" placeholder="Nombre final" id= "finConvives">
+            <button id="ok2" type="button" onclick ="getFinConValue();">OK</button>
+        </form>
+        <p class="info">Recette :</p>
+
+        <form id="form" class="form">
+            <input type="text" autocomplete="off" placeholder="Ajout Ingredient" id="champ" class ="champ">
+            <input type="text" autocomplete="off" placeholder="Ajout Quantité" id="champ2" class ="champ">
+            <input type="submit" id="btnQuant" value="OK" class="btnQuant">
+        </form>
+        <ul id="ul"></ul>
+
+    </div>
+   <footer>
+        <div>
+            <p class="mess">Bon appétit ! </p>
+            <p class="info2">© François Denivet - Juin 2022</p>
+        </div>
+        <div>
+            <button id="installBtn" class="installBtn">Installer l'application</button>
+        </div>
+        </footer>
+   
+</body>
+
+</html>
